@@ -1,1 +1,12 @@
 site_name: My Docs
+
+plugins:
+  - mkdocs-video:
+      css_style:
+        width: "850px"
+        height: "478px"
+  - search:
+      separator: '[\s]+'
+      lang: en
+      prebuild_index: true
+  - git-revision-date

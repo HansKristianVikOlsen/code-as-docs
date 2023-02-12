@@ -24,8 +24,8 @@ async function setupNodeEvents(
 const cypressJsonConfig = {
   fileServerFolder: ".",
   fixturesFolder: "./src/fixtures",
-//  video: true,
-
+ video: true,
+ videosFolder: "featureVideos",
   chromeWebSecurity: false,
   specPattern: "cypress/features/**/*.feature",
 //  supportFile: "src/support/e2e.ts",
