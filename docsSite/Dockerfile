@@ -1,12 +1,14 @@
-FROM squidfunk/mkdocs-material as BUILD
+FROM squidfunk/mkdocs-material
+
 RUN pip3 install mkdocs-mermaid-plugin
 RUN pip3 install mkdocs-git-revision-date-plugin
 RUN pip3 install mkdocs-macros-plugin
 RUN pip3 install mkdocs-video
-WORKDIR /mkdocs
-COPY . .
-RUN mkdocs build
 
-FROM nginxinc/nginx-unprivileged
-COPY --from=BUILD ./mkdocs/site ./usr/share/nginx/html
-EXPOSE 8080
+WORKDIR /docs
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["serve", "-a", "0.0.0.0:8000"]

@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  mkdocs:
+    build:
+      context: ./docsSite
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+  react:
+    build:
+      context: ./cra-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"

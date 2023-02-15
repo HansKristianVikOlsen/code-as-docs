@@ -31,7 +31,10 @@ const cypressJsonConfig = {
 //  supportFile: "src/support/e2e.ts",
   viewportWidth: 1920,
   viewportHeight: 1080,
-  baseUrl: "http://localhost:3000"
+  baseUrl: "http://localhost:3000",
+  env: {
+    NO_COMMAND_LOG: 1
+  }
 
 };
 

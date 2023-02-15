@@ -2,6 +2,7 @@ import { Given,When,Then } from "@badeball/cypress-cucumber-preprocessor";
 
   Given(`I am a user`, () => {
  cy.visit("/")
+ cy.displayTextIfCypressIsInDocumentationMode("test text")
   });
   When(`I open the website`, () => {
 
