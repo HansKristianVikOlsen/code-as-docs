@@ -10,13 +10,16 @@ declare namespace Cypress {
   }
 
 Cypress.Commands.add('displayTextIfCypressIsInDocumentationMode', (text:string) => {
+    // Normaly you would pass a variabel here to toggle if you want to display text or not
+    // Here we will always show it
     //if (Cypress.env('CYPRESS_IN_DOCUMENTATION_MODE')) {
-        cy.text(text, {
-            duration: 4000, // how long the text should be there
-            blocking: true, // wait for the text to hide
-            textSize: '20pt' // CSS text height
-        });
+        
    // }
+   cy.text(text, {
+    duration: 4000, // how long the text should be there
+    blocking: true, // wait for the text to hide
+    textSize: '20pt' // CSS text height
+});
 });
 
 const textCommand = (text, options:any = {}) => {

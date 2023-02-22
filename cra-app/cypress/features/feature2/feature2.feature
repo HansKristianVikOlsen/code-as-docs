@@ -1,4 +1,5 @@
 Feature: feature1
+![type:video](./featureVideos/feature2/feature2.feature.mp4)
 
     I want to go to feature2
 
