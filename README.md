@@ -1,3 +1,10 @@
+# Try the test project!
+
+1. Run `docker-compose up`
+2. Run the `./RunAndCreateDocs`script
+3. Go to `http://localhost:8000`
+4. See the automatic created docs! :D 
+
 # Generating documentation based on code with cypress and Gherkins
 
 Creating end-user documention yourself is boring, why not automate it so you do not have to? Here are some reasons why you should consider it
