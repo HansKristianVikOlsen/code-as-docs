@@ -1,6 +1,5 @@
-# List of features!
 Feature: feature1
-![type:video](./featureVideos/feature1/feature1.feature.mp4)
+![type:video](./featureVideos/feature2/feature2.feature.mp4)
 
 
     I want to go to feature1

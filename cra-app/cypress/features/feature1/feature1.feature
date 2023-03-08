@@ -1,3 +1,4 @@
+# List of features!
 Feature: Search for New York Times on Google
 ![type:video](./featureVideos/feature1/feature1.feature.mp4)
 

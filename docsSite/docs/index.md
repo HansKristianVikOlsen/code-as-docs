@@ -1,3 +1,4 @@
+# List of features!
 Feature: Search for New York Times on Google
 ![type:video](./featureVideos/feature1/feature1.feature.mp4)
 
@@ -10,8 +11,7 @@ Feature: Search for New York Times on Google
     Scenario: Open the first link for New York Times
         Given I am on the search results page for New York Times
         When I click on the first search result
-        Then I am taken to the New York Times website# List of features!
-Feature: feature1
+        Then I am taken to the New York Times websiteFeature: feature1
 ![type:video](./featureVideos/feature1/feature1.feature.mp4)
 
 
