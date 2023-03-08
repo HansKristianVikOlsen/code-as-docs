@@ -27,3 +27,6 @@ then
 else
     echo "index.md not found in current directory."
 fi
+
+cd docsSite
+mkdocs serve

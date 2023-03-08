@@ -17,3 +17,6 @@ if (Test-Path .\cra-app) {
 } else {
     Write-Output "cra-app not found in current directory."
 }
+
+cd docsSite
+mkdocs serve
